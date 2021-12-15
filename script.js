@@ -2,7 +2,7 @@ document.getElementById("raceSubmit").addEventListener("click", function(event) 
   event.preventDefault();
   const value = document.getElementById("raceInput").value;
 
-  const url = "http://www.dnd5eapi.co/api/races/" + value;
+  const url = "https://www.dnd5eapi.co/api/races/" + value;
   fetch(url)
     .then(function(response) {
       return response.json();
@@ -38,7 +38,7 @@ document.getElementById("classSubmit").addEventListener("click", function(event)
   event.preventDefault();
   const value = document.getElementById("classInput").value;
 
-  const url = "http://www.dnd5eapi.co/api/classes/" + value;
+  const url = "https://www.dnd5eapi.co/api/classes/" + value;
   fetch(url)
     .then(function(response) {
       return response.json();
@@ -85,7 +85,7 @@ document.getElementById("equipmentSubmit").addEventListener("click", function(ev
   event.preventDefault();
   const value = document.getElementById("equipmentInput").value;
 
-  const url = "http://www.dnd5eapi.co/api/equipment/" + value;
+  const url = "https://www.dnd5eapi.co/api/equipment/" + value;
 
   fetch(url)
     .then(function(response) {
